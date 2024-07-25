@@ -1,0 +1,60 @@
+/* CustomNavbar.css */
+body {
+  overflow-x: hidden;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.logo-image {
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 3.2vw;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+.nav-links .active {
+  color: #00adb5;
+}
+
+
+.content-container.sliding {
+  overflow: hidden;
+}
+
+

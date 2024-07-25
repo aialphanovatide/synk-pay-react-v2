@@ -1,0 +1,136 @@
+/* Home.css */
+html, body {
+  scroll-behavior: smooth;
+  background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
+  overflow-x: hidden;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home-main-wrapper {
+  background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);  height: 120vh;
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -250px;
+  overflow: hidden;
+}
+
+.home-image-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  z-index: 1; /* Ensures the image stays in the background */
+  opacity: 0; /* Initially hidden */
+  animation: fade-in 1s ease-out forwards;
+  animation-delay: 1.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home-background-image{
+  width: 100%;
+  height: 110%;
+  object-fit: cover;
+  margin-top: -140px;
+
+}
+
+
+.home-page {
+  color: white;
+  text-align: center;
+  width: 500px;
+  opacity: 0; /* Initially hidden */
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0s;
+  z-index: 3;
+  margin-top: 100px;
+}
+
+.home-page h2 {
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  margin-top: -5px;
+}
+
+.home-page p {
+  margin-top: 10px;
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.home-page-two {
+  color: white;
+  text-align: center;
+  width: 800px;
+  opacity: 0; /* Initially hidden */
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0.5s;
+  z-index: 1;
+  margin-bottom: -100px;
+  margin-top: 100px;
+}
+
+.home-page-two h2 {
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.home-page-two p {
+  margin-top: 10px;
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+}
+
+div.footer-container {
+  position: absolute;
+  background: linear-gradient(111deg, #0A0A0A 5.9%, #0A0A0A 97.91%);
+  display: block;
+  margin: 100px auto -150px auto;
+  background-color: transparent;
+  bottom: 0;
+}
+
+.footer-container .copyright {
+  color: #c5c5c5;
+  width: 100%;
+  font-family: "Prompt", sans-serif;
+}
+
+
+.footer-container .copyright p {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+  color: #c5c5c5;
+}
